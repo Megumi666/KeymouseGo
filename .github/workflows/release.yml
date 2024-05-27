@@ -65,10 +65,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@main
-      - name: Set up Python 3.7
+      - name: Set up Python 3.12.3
         uses: actions/setup-python@main
         with:
-          python-version: "3.7"
+          python-version: "3.12.3"
       - name: Install dependencies
         run: |
           pip3 install -r requirements-universal.txt
